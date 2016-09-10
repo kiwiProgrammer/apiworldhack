@@ -1,4 +1,4 @@
-package com.integrateapiworld.hackathon.fashionex;
+package apiworld.fashionex;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

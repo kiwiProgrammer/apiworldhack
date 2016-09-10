@@ -1,4 +1,4 @@
-package com.integrateapiworld.hackathon.fashionex;
+package apiworld.fashionex;
 
 import org.junit.Test;
 

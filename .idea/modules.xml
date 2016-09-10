@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FashionEx.iml" filepath="$PROJECT_DIR$/FashionEx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apiworldhack.iml" filepath="$PROJECT_DIR$/apiworldhack.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
