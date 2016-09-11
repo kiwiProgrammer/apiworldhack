@@ -23,9 +23,7 @@
             android:name=".camera.CameraActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_camera"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
-
-        </activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
         <activity
             android:name=".favorite.FavoriteActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -35,7 +33,7 @@
             android:name=".smartcart.SmartCartActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_smart_cart"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" />
         <activity
             android:name=".WebActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"

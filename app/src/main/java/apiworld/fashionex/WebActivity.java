@@ -33,7 +33,7 @@ public class WebActivity extends Activity {
      */
     private static final boolean AUTO_HIDE = true;
 
-    private static String[] IMAGES = new String[4];
+    private static String[] IMAGES = new String[5];
     public static int index = 1;
 
     /**
@@ -104,10 +104,11 @@ public class WebActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        IMAGES[0] = "screen1.png";
-        IMAGES[1] = "screen2.png";
-        IMAGES[2] = "screen3.png";
-        IMAGES[3] = "screen4.png";
+        IMAGES[0] = "screen0.png";
+        IMAGES[1] = "screen1.png";
+        IMAGES[2] = "screen2.png";
+        IMAGES[3] = "screen3.png";
+        IMAGES[4] = "screen4.png";
 
         setContentView(R.layout.activity_web);
         this.context = this.getApplicationContext();
