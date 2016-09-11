@@ -62,6 +62,23 @@ public class CameraActivity extends AppCompatActivity {
         this.preview = new CameraPreview(this, this.camera);
         this.frame = (RelativeLayout) findViewById(R.id.camera_preview);
         this.frame.addView(this.preview);
+
+        this.overlay.setOnTouchListener(new SwipeTouchListener(this) {
+
+            public void onSwipeTop() {
+                Toast.makeText(context, "top", Toast.LENGTH_SHORT).show();
+            }
+            public void onSwipeRight() {
+                Toast.makeText(context, "right", Toast.LENGTH_SHORT).show();
+            }
+            public void onSwipeLeft() {
+                Toast.makeText(context, "left", Toast.LENGTH_SHORT).show();
+            }
+            public void onSwipeBottom() {
+                Toast.makeText(context, "bottom", Toast.LENGTH_SHORT).show();
+            }
+
+        });
     }
 
     @Override
