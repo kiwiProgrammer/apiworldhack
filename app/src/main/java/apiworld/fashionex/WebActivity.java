@@ -3,6 +3,8 @@ package apiworld.fashionex;
 import android.annotation.SuppressLint;
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,16 +12,21 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import java.io.IOException;
 import java.io.InputStream;
+
+import apiworld.fashionex.camera.CameraActivity;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
 public class WebActivity extends Activity {
+
+    private Context context;
     /**
      * Whether or not the system UI should be auto-hidden after
      * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -103,6 +110,17 @@ public class WebActivity extends Activity {
         IMAGES[3] = "screen4.png";
 
         setContentView(R.layout.activity_web);
+        this.context = this.getApplicationContext();
+        Button btn_continue = (Button) this.findViewById(R.id.dummy_button);
+        btn_continue.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, CameraActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         mVisible = true;
         mControlsView = findViewById(R.id.fullscreen_content_controls);
