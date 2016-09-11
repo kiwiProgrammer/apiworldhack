@@ -5,4 +5,8 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
     <string name="title_activity_camera">CameraActivity</string>
+
+    <string name="title_activity_favorites">FavoritesActivity</string>
+
+    <string name="title_activity_smart_cart">SmartCartActivity</string>
 </resources>

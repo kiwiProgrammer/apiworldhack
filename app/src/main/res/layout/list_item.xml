@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20px">
+
+    <ImageView android:id="@+id/item_image"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true" />
+
+    <TextView android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_image"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="10px"
+        android:textColor="@android:color/black"
+        android:text="$30.00"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/item_image"
+        android:layout_marginLeft="10px"
+        android:layout_below="@id/item_price"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10px"
+        android:text="Zara Man Jacket" />
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Smart Cart"
+        android:padding="5dp"
+        android:gravity="center_horizontal"
+        android:background="@android:color/white" />
+
+    <TextView android:id="@+id/price_total"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:text="2 Items Total: $40.00"
+        android:layout_below="@id/title"
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+    <ListView android:layout_below="@id/price_total" android:id="@+id/listview"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px">
+
+    </ListView>
+
+    <RelativeLayout android:id="@+id/badge_plague" android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/border"
+        android:layout_below="@id/listview"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <TextView android:id="@+id/badge_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="We noticed that you are "
+            android:gravity="center_horizontal">
+
+        </TextView>
+
+        <ImageView android:id="@+id/badge"
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/adv"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/badge_title"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+    <TextView android:id="@+id/reco_title"
+        android:layout_below="@id/badge_plague"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:text="You might be interested in "
+        android:gravity="center_horizontal">
+
+    </TextView>
+
+    <GridView android:id="@+id/gridview" android:layout_below="@id/reco_title"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center">
+        </GridView>
+
+
+</RelativeLayout>
